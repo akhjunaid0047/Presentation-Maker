@@ -1,0 +1,40 @@
+TO CREATE A NEW PRESENTATION 
+
+https://alai-standalone-backend.getalai.com/create-new-presentation POST
+
+Auth: Bearer Token : dhsdhgsihfhdsfhos
+
+Request Body :
+
+{"presentation_id":"dd53b160-f9a6-4385-bb51-fd4034bb6e60","presentation_title":"Untitled Presentation","create_first_slide":true,"theme_id":"a6bff6e5-3afc-4336-830b-fbc710081012","default_color_set_id":0}
+
+
+GET CALIBRATION SAMPLE TEXT
+
+https://alai-standalone-backend.getalai.com/get-calibration-sample-text POST
+
+Auth: Bearer Token : dhsdhgsihfhdsfhos
+
+Request Body :
+
+{"presentation_id":"337119f4-bdfa-4542-ad26-2ff6cbb10ae3","raw_context":"Docker is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers.[5] The service has both free and premium tiers. The software that hosts the containers is called Docker Engine.[6] It was first released in 2013 and is developed by Docker, Inc.[7]\n\nDocker is a tool that is used to automate the deployment of applications in lightweight containers so that applications can work efficiently in different environments in isolation.\n\nBackground\nContainers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.[8] Because all of the containers share the services of a single operating system kernel, they use fewer resources than virtual machines.[6]\n\n"}
+
+
+CLICKING ON GENERATE SLIDE OPENS WEB SOCKETS
+
+wss://alai-standalone-backend.getalai.com/ws/create-and-stream-slide-variants GET
+
+Auth: Bearer Token : dhsdhgsihfhdsfhos
+
+{"auth_token":"eyJhbGciOiJIUzI1NiIsImtpZCI6IldweTRON29pb3ZueDNMTnEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2VzY2hvdHRoamdsamJ4amVyY3puLnN1cGFiYXNlLmNvL2F1dGgvdjEiLCJzdWIiOiJmZGQ0OTM3Mi05ZjVkLTRhMWQtODNkNC1lNTQxMjYyYWYwOTIiLCJhdWQiOiJhdXRoZW50aWNhdGVkIiwiZXhwIjoxNzQzNzcwNjYzLCJpYXQiOjE3NDM3NjcwNjMsImVtYWlsIjoiYWtoanVuYWlkLjA0N0BnbWFpbC5jb20iLCJwaG9uZSI6IiIsImFwcF9tZXRhZGF0YSI6eyJwcm92aWRlciI6Imdvb2dsZSIsInByb3ZpZGVycyI6WyJnb29nbGUiXX0sInVzZXJfbWV0YWRhdGEiOnsiYXZhdGFyX3VybCI6Imh0dHBzOi8vbGgzLmdvb2dsZXVzZXJjb250ZW50LmNvbS9hL0FDZzhvY0xZdjRyMXVaUDJ5SEhmZEZyVG4xSTFMNlNqdE5RU1hYTWFxQ05IS2p6Y1NUazZFenVCPXM5Ni1jIiwiZW1haWwiOiJha2hqdW5haWQuMDQ3QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmdWxsX25hbWUiOiJKdW5haWQgIzEzMTYiLCJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYW1lIjoiSnVuYWlkICMxMzE2IiwicGhvbmVfdmVyaWZpZWQiOmZhbHNlLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUNnOG9jTFl2NHIxdVpQMnlISGZkRnJUbjFJMUw2U2p0TlFTWFhNYXFDTkhLanpjU1RrNkV6dUI9czk2LWMiLCJwcm92aWRlcl9pZCI6IjEwMDE2MjQwNTY0MjQ1ODk1OTY5MSIsInN1YiI6IjEwMDE2MjQwNTY0MjQ1ODk1OTY5MSJ9LCJyb2xlIjoiYXV0aGVudGljYXRlZCIsImFhbCI6ImFhbDEiLCJhbXIiOlt7Im1ldGhvZCI6Im9hdXRoIiwidGltZXN0YW1wIjoxNzQzNzU4NzI4fV0sInNlc3Npb25faWQiOiIxM2FhZWU4Ny1hZTZiLTQzMDEtOGYxNy1iNjVmMjYzMzYzZjQiLCJpc19hbm9ueW1vdXMiOmZhbHNlfQ.zNea5ni-YemK2sX5MtkVZzPmHikbP_lMlVlog9dluUw","presentation_id":"337119f4-bdfa-4542-ad26-2ff6cbb10ae3","slide_id":"523b8157-1451-4c38-9241-0a5b0a2fa3d0","slide_specific_context":"Docker is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers.[5] The service has both free and premium tiers. The software that hosts the containers is called Docker Engine.[6] It was first released in 2013 and is developed by Docker, Inc.[7]\n\nDocker is a tool that is used to automate the deployment of applications in lightweight containers so that applications can work efficiently in different environments in isolation.\n\nBackground\nContainers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.[8] Because all of the containers share the services of a single operating system kernel, they use fewer resources than virtual machines.[6]\n\n","images_on_slide":[],"additional_instructions":"","layout_type":"AI_GENERATED_LAYOUT","update_tone_verbosity_calibration_status":true}
+
+{"id":"523b8157-1451-4c38-9241-0a5b0a2fa3d0","presentation_id":"337119f4-bdfa-4542-ad26-2ff6cbb10ae3","slide_order":0,"color_set_id":0,"variants":[],"created_at":"2025-04-04T12:25:29.895526+00:00","active_variant_id":null,"slide_outline":null,"slide_context":"Docker is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers.[5] The service has both free and premium tiers. The software that hosts the containers is called Docker Engine.[6] It was first released in 2013 and is developed by Docker, Inc.[7]\n\nDocker is a tool that is used to automate the deployment of applications in lightweight containers so that applications can work efficiently in different environments in isolation.\n\nBackground\nContainers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.[8] Because all of the containers share the services of a single operating system kernel, they use fewer resources than virtual machines.[6]\n\n","slide_instructions":"","presentation_context":"In this presentation, Docker is introduced as part of a larger discussion on containerization technologies. Previous slides covered:\n\n• Containerization basics and benefits\n• Comparison between virtual machines and containers\n• Modern cloud infrastructure concepts\n• Industry adoption trends for containers\n• Common use cases for containerization in development workflows\n\nThe upcoming slides will discuss Docker architecture, commands, and Kubernetes integration.","slide_status":"VARIANT_GENERATION_SELECTION"}
+
+PICKING A SLIDE VARIANT
+
+https://alai-standalone-backend.getalai.com/pick-slide-variant POST
+
+{"slide_id":"523b8157-1451-4c38-9241-0a5b0a2fa3d0","variant_id":"8cabcf15-90e3-4301-b543-9fa13367f6b6"}
+
+
+
